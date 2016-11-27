@@ -1,12 +1,31 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
 
-<h1>Register Email Address: </h1>
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
 
-<form action="/" method="post">
-  {% csrf_token %}
-  
+<h1></h1>
 
-  {{ form.as_ul }}
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h3 class="panel-title">Subscribe for weather notifications: </h3></div>
+      <div class="panel-body">
+        <form action="/register" method="post" class="form">
+          {% csrf_token %}
 
+          {% bootstrap_field form.email layout='horizontal' size='sm' %}
+          {% bootstrap_field form.location layout='horizontal' size='sm' %}
 
-  <input type="submit" value="Subscribe" />
-</form>
+          <center>
+            {% buttons %}
+              <button class="btn btn-primary" type="submit">
+                 Subscribe
+               </button>
+            {% endbuttons %}
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

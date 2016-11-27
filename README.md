@@ -9,7 +9,7 @@ Tested on OSX 10.12. Standalone apps below installed via <code>Homebrew</code>.
 - django 1.10.3
 - virtualenv 15.1.0
 - pip:
-  - (no modules installed)
+  - django-bootstrap3
 
 Miscellaneous install notes:
 ====

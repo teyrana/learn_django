@@ -1,0 +1,18 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<h2>Weather Notification List:</h2>
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h2>
+      {{ message }}
+    </h2>
+  </div>
+</div>

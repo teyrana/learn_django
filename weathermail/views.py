@@ -1,23 +1,25 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.contrib import messages
 
 from .forms import RegisterForm
 # Create your views here.
 
-def index(request):
-    return register( request);
+def register(request):
+    form = RegisterForm()
+    return render( request, 'register.html', {'form': form})
 
-
-def register( request):
-    if request.method == 'GET':
-        form = RegisterForm()
-        return render( request, 'register.html', {'form': form})
-        #raise Http404(" This url does not accept GET requests")
+def result( request):
     if request.method == 'POST':
         form = RegisterForm( request.POST )
+        context={};
+
         if form.is_valid():
             form.save();
-            return HttpResponse(str(form)+
-                    "<h2>successfully Subscribed.</h2>")
+            messages.success( request, 'Successfully Subscribed')
+            context = { 'message': "You have been added to the list!"}
         else:
-            return HttpResponse("Subscription Error!")
+            messages.warning( request, 'Subscription Error')
+            context = { 'message': "Error! Your address has not been added."}
+
+        return render( request, 'result.html', context)

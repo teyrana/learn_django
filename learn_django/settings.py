@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'weathermail.apps.WeathermailConfig',
+    'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'weathermail.apps.WeathermailConfig',
 ]
 
 MIDDLEWARE = [
