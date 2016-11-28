@@ -63,7 +63,7 @@
 {"model":"weathermail.city", "fields":{ "display_name":"Stockton, California",  "api_name":"CA/Stockton",  "population":305658} },
 {"model":"weathermail.city", "fields":{ "display_name":"Pittsburgh, Pennsylvania",  "api_name":"PA/Pittsburgh",  "population":304391} },
 {"model":"weathermail.city", "fields":{ "display_name":"St. Paul, Minnesota",  "api_name":"MI/St_Paul",  "population":300851} },
-{"model":"weathermail.city", "fields":{ "display_name":"Anchorage, Alaska",  "api_name":"AL/Anchorage",  "population":298695} },
+{"model":"weathermail.city", "fields":{ "display_name":"Anchorage, Alaska",  "api_name":"AK/Anchorage",  "population":298695} },
 {"model":"weathermail.city", "fields":{ "display_name":"Cincinnati, Ohio",  "api_name":"OH/Cincinnati",  "population":298550} },
 {"model":"weathermail.city", "fields":{ "display_name":"Henderson, Nevada",  "api_name":"NV/Henderson",  "population":285667} },
 {"model":"weathermail.city", "fields":{ "display_name":"Greensboro, North Carolina",  "api_name":"NC/Greensboro",  "population":285342} },

@@ -1,0 +1,23 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h2>Send Weather Notices:</h2>
+
+    {# Display django.contrib.messages as Bootstrap alerts #}
+    {% bootstrap_messages %}
+
+    {% if user.is_superuser %}
+      <h2>
+        <a class="btn btn-primary" href="send"> Notify List of Weather! </a>
+      </h2>
+    {% else %}
+      <h2>
+        You aren't logged in!
+        <a class="btn btn-primary" href="admin/"> Log In! </a>
+      </h2>
+    {% endif %}
+  </div>
+</div>

@@ -25,8 +25,16 @@ SECRET_KEY = 'u3&15s9ud5!k2u)%h7=edfi(%c)nohg7nxa-zgc&ri2smh71qm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# loads local secret keys into the env variables
+os.system("source ./.env")
 
+# loads env variables into python memory
+WUNDERGROUND_API_KEY = os.environ.get('WUNDERGROUND_API_KEY')
+
+EMAIL_BACKEND = 'sgbackend.SendGridBackend'
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
+
+ALLOWED_HOSTS = []
 
 # Application definition
 
