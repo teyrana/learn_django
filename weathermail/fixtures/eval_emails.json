@@ -1,7 +1,7 @@
 [
-  {"model":"weathermail.recipient", "fields":{ "username":"weatherapp+anc", "email":"weatherapp+anc@klaviyo.com", "city":65}},
-  {"model":"weathermail.recipient", "fields":{ "username":"weatherapp+aus", "email":"weatherapp+aus@klaviyo.com", "city":11}},
-  {"model":"weathermail.recipient", "fields":{ "username":"weatherapp+bos", "email":"weatherapp+bos@klaviyo.com", "city":23}},
-  {"model":"weathermail.recipient", "fields":{ "username":"weatherapp+sea", "email":"weatherapp+sea@klaviyo.com", "city":18}},
-  {"model":"weathermail.recipient", "fields":{ "username":"weatherapp+wdc", "email":"weatherapp+wdc@klaviyo.com", "city":22}}
+  {"model":"weathermail.recipient", "fields":{ "email":"weatherapp+anc@klaviyo.com", "location":65}},
+  {"model":"weathermail.recipient", "fields":{ "email":"weatherapp+aus@klaviyo.com", "location":11}},
+  {"model":"weathermail.recipient", "fields":{ "email":"weatherapp+bos@klaviyo.com", "location":23}},
+  {"model":"weathermail.recipient", "fields":{ "email":"weatherapp+sea@klaviyo.com", "location":18}},
+  {"model":"weathermail.recipient", "fields":{ "email":"weatherapp+wdc@klaviyo.com", "location":22}}
 ]
